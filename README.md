@@ -1,1 +1,1 @@
-# ruby_koans
+Run ruby path_to_enlightenment.rb

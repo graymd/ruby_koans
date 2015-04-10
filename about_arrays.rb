@@ -63,10 +63,10 @@ class AboutArrays < Neo::Koan
     array = [1,2]
     array.push(:last)
 
-    assert_equal __, array
+    assert_equal Array, array
 
     popped_value = array.pop
-    assert_equal __, popped_value
+    assert_equal test, popped_value
     assert_equal __, array
   end
 
