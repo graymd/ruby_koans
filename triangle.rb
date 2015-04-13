@@ -15,6 +15,12 @@
 #
 def triangle(a, b, c)
   # WRITE THIS CODE
+  if [a, b, c].min <= 0
+    raise TriangleError
+  end
+  if a + b <= c || a + c <= b || b + c <= a
+    raise TriangleError
+  end
   if a == b && b == c
     return :equilateral
   elsif a == b || a == c || b == c
